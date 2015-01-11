@@ -2,10 +2,10 @@ class SalesController < ApplicationController
   # GET /sales
   # GET /sales.json
   def index
-    if (params[:city]).nil?
+    if (params[:cities]).nil?
       @sales = Sale.all
     else
-      @sales = Sale.filter_by_city(params[:city])
+      @sales = Sale.filter_by_city(params[:cities])
     end
     respond_to do |format|
       format.html # index.html.erb

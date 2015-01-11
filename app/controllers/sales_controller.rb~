@@ -5,7 +5,7 @@ class SalesController < ApplicationController
     if (params[:city]).nil?
       @sales = Sale.all
     else
-      Sale.filter_by_city(params[:city])
+      @sales = Sale.filter_by_city(params[:city])
     end
     respond_to do |format|
       format.html # index.html.erb
