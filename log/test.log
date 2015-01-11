@@ -42074,3 +42074,1350 @@ Processing by SalesController#destroy as HTML
 Redirected to http://test.host/sales
 Completed 302 Found in 3.6ms (ActiveRecord: 1.1ms)
   [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (50.3ms)[0m  [1mDELETE FROM "sales";[0m
+  [1m[35m (0.3ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (31.2ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'sales';[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (59.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:50 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:50 UTC +00:00]]
+  [1m[35m (26.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:50 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:50 UTC +00:00]]
+  [1m[36m (54.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (43.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (33.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (69.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (40.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (48.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (24.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (22.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (59.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (35.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (26.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (26.3ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (49.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (28.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (25.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (22.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (49.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (29.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (26.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (25.6ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (27.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (41.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (49.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[35m (21.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:51 UTC +00:00]]
+  [1m[36m (26.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (28.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (28.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (24.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (66.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (33.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (54.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (26.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (30.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (56.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (19.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (33.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (62.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (31.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (49.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (23.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (34.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (16.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (30.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (26.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (35.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (44.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[36m (32.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:52 UTC +00:00]]
+  [1m[35m (19.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (21.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (25.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (24.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (49.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (19.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (32.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (26.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (19.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (23.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (20.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (24.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (21.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (19.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (30.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (20.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (57.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (44.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (54.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (29.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (19.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (10.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (18.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (22.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (35.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (21.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (21.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (44.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[36m (38.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:53 UTC +00:00]]
+  [1m[35m (52.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (25.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (16.2ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (27.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (25.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (38.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (19.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (21.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (21.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (30.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (33.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (25.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (46.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (38.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (26.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (25.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (50.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (18.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (20.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (44.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (24.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (47.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[35m (58.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:11:54 UTC +00:00]]
+  [1m[36m (34.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (0.9ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62.0ms (Views: 55.9ms | ActiveRecord: 0.9ms)
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  Parameters: {"cities"=>{"Alex"=>"1"}}
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+Completed 200 OK in 6.2ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+  [1m[35mSale Load (0.4ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."city" IN ('Alex')
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  Parameters: {"commit"=>"filter"}
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+Completed 200 OK in 7.0ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+Completed 200 OK in 5.5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SalesController#new as HTML
+Completed 200 OK in 2.8ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#edit as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+Completed 200 OK in 3.7ms (Views: 2.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "sales" 
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 8.4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "sales" 
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 10.4ms (ActiveRecord: 1.0ms)
+  [1m[35m (2.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales/101
+Completed 302 Found in 5.8ms (ActiveRecord: 1.2ms)
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" ORDER BY "sales"."id" DESC LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SalesController#update as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}, "id"=>"101"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1  [["id", "101"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (7.0ms)[0m  UPDATE "sales" SET "date" = '2015-01-01 00:00:00.000000', "updated_at" = '2015-01-11 19:11:55.379269' WHERE "sales"."id" = 101
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 14.4ms (ActiveRecord: 7.3ms)
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#update as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}, "id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "sales" SET "date" = '2015-01-01 00:00:00.000000', "updated_at" = '2015-01-11 19:11:55.407300' WHERE "sales"."id" = 101[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales/101
+Completed 302 Found in 5.9ms (ActiveRecord: 0.8ms)
+  [1m[36m (7.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "sales" 
+Processing by SalesController#destroy as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (7.2ms)[0m  [1mDELETE FROM "sales" WHERE "sales"."id" = ?[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales
+Completed 302 Found in 11.6ms (ActiveRecord: 7.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "sales" [0m
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:11:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#destroy as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "sales" WHERE "sales"."id" = ?[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales
+Completed 302 Found in 3.1ms (ActiveRecord: 1.0ms)
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (72.5ms)[0m  [1mDELETE FROM "sales";[0m
+  [1m[35m (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (23.9ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'sales';[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (50.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00]]
+  [1m[35m (38.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00]]
+  [1m[36m (38.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00]]
+  [1m[35m (26.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00]]
+  [1m[36m (24.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:17 UTC +00:00]]
+  [1m[35m (34.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (45.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (17.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (21.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (25.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (37.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (16.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (21.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (46.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (19.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (17.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (19.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (22.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (23.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (21.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (18.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (4.0ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (30.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (39.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (24.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (16.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (13.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (37.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (19.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (24.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (22.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (17.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (17.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (14.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (15.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (15.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (22.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[35m (25.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:18 UTC +00:00]]
+  [1m[36m (40.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (20.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (16.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (16.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (34.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (14.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (22.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (19.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (14.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (14.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (28.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (15.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (15.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (27.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (44.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (43.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (22.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (21.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (29.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (14.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (15.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (16.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (28.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (19.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (26.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (14.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (14.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (17.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (30.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (15.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (16.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (16.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (38.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (17.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (15.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (15.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (16.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (20.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (18.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:19 UTC +00:00]]
+  [1m[35m (24.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (35.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (16.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (16.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (16.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (16.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (19.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (16.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (14.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (20.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (13.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (21.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (14.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (35.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (1.2ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61.0ms (Views: 54.9ms | ActiveRecord: 1.2ms)
+  [1m[35mSale Load (0.7ms)[0m  SELECT "sales".* FROM "sales" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  Parameters: {"cities"=>{"Alex"=>"1"}}
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+Completed 200 OK in 6.2ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+  [1m[35mSale Load (0.4ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."city" IN ('Alex')
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  Parameters: {"commit"=>"filter"}
+  [1m[36mSale Load (0.9ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+Completed 200 OK in 6.3ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+Completed 200 OK in 4.0ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SalesController#new as HTML
+Completed 200 OK in 2.1ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#edit as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+Completed 200 OK in 4.2ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "sales" 
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 8.4ms (ActiveRecord: 1.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "sales" 
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 5.2ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales/101
+Completed 302 Found in 4.9ms (ActiveRecord: 1.0ms)
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" ORDER BY "sales"."id" DESC LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SalesController#update as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}, "id"=>"101"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1  [["id", "101"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  UPDATE "sales" SET "date" = '2015-01-01 00:00:00.000000', "updated_at" = '2015-01-11 19:12:20.802381' WHERE "sales"."id" = 101
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 7.5ms (ActiveRecord: 0.9ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#update as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}, "id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "sales" SET "date" = '2015-01-01 00:00:00.000000', "updated_at" = '2015-01-11 19:12:20.817020' WHERE "sales"."id" = 101[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales/101
+Completed 302 Found in 5.6ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "sales" 
+Processing by SalesController#destroy as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "sales" WHERE "sales"."id" = ?[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales
+Completed 302 Found in 3.8ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "sales" [0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:12:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#destroy as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.0ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "sales" WHERE "sales"."id" = ?[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales
+Completed 302 Found in 2.5ms (ActiveRecord: 1.1ms)
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (53.8ms)[0m  [1mDELETE FROM "sales";[0m
+  [1m[35m (0.4ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (15.6ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'sales';[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (47.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (37.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (29.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (41.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (22.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (20.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (22.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (36.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (46.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (25.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (14.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (25.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (21.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (25.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (23.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (20.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[36m (25.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:29 UTC +00:00]]
+  [1m[35m (17.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (51.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (16.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (31.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (49.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (28.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (24.8ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (27.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (15.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (15.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (19.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (15.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (16.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (18.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (20.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (15.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (15.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (32.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (16.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (17.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (18.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (53.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (20.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (16.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (14.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (20.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (13.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (14.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (38.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (14.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (17.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[35m (36.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:30 UTC +00:00]]
+  [1m[36m (23.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (15.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (14.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (16.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (18.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (25.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (17.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (16.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (40.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (57.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (44.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (21.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (16.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (15.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (15.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (16.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (35.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (15.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (21.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (14.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (32.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (18.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (19.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (15.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (17.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (23.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (18.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (11.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (24.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (27.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (29.2ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (38.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (24.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Iphone 6"], ["price", 6000], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (17.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Wed, 07 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[35m (29.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:31 UTC +00:00]]
+  [1m[36m (34.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[35m (27.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[36m (35.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[35m (23.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Keybaord"], ["price", 150], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[36m (23.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[35m (23.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Aswan"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Mouse"], ["price", 10], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[36m (24.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[35m (25.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Cairo"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "CPU"], ["price", 4000], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[36m (28.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.8ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Alex"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Fri, 09 Jan 2015 04:00:00 UTC +00:00], ["good", "Galaxy S5"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[35m (34.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "Screen"], ["price", 700], ["updated_at", Sun, 11 Jan 2015 19:13:32 UTC +00:00]]
+  [1m[36m (21.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  [1m[36mSale Load (0.9ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+  Rendered sales/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 209.4ms (Views: 196.1ms | ActiveRecord: 0.9ms)
+  [1m[35mSale Load (0.9ms)[0m  SELECT "sales".* FROM "sales" 
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  Parameters: {"cities"=>{"Alex"=>"1"}}
+  [1m[36mSale Load (21.6ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+Completed 200 OK in 38.9ms (Views: 1.5ms | ActiveRecord: 21.6ms)
+  [1m[35mSale Load (0.6ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."city" IN ('Alex')
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SalesController#index as HTML
+  Parameters: {"commit"=>"filter"}
+  [1m[36mSale Load (0.8ms)[0m  [1mSELECT "sales".* FROM "sales" [0m
+Completed 200 OK in 16.5ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.4ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+Completed 200 OK in 4.4ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (8.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SalesController#new as HTML
+Completed 200 OK in 14.0ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#edit as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (1.4ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+Completed 200 OK in 23.2ms (Views: 7.9ms | ActiveRecord: 1.4ms)
+  [1m[35m (9.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  SELECT COUNT(*) FROM "sales" 
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 26.7ms (ActiveRecord: 1.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "sales" 
+  [1m[36m (23.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 27.6ms (ActiveRecord: 1.4ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SalesController#create as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}}
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 00:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales/101
+Completed 302 Found in 29.4ms (ActiveRecord: 1.5ms)
+  [1m[36mSale Load (0.2ms)[0m  [1mSELECT "sales".* FROM "sales" ORDER BY "sales"."id" DESC LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[35m (5.6ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (4.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SalesController#update as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}, "id"=>"101"}
+  [1m[35mSale Load (0.1ms)[0m  SELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1  [["id", "101"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (5.3ms)[0m  UPDATE "sales" SET "date" = '2015-01-01 00:00:00.000000', "updated_at" = '2015-01-11 19:13:33.796618' WHERE "sales"."id" = 101
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/sales/101
+Completed 302 Found in 17.3ms (ActiveRecord: 5.6ms)
+  [1m[35m (14.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#update as HTML
+  Parameters: {"sale"=>{"city"=>"Mansoura", "price"=>"5000", "good"=>"iphone", "date"=>"2015-01-01"}, "id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mUPDATE "sales" SET "date" = '2015-01-01 00:00:00.000000', "updated_at" = '2015-01-11 19:13:33.864097' WHERE "sales"."id" = 101[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales/101
+Completed 302 Found in 21.0ms (ActiveRecord: 0.8ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (14.6ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "sales" 
+Processing by SalesController#destroy as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.5ms)[0m  [1mDELETE FROM "sales" WHERE "sales"."id" = ?[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales
+Completed 302 Found in 22.8ms (ActiveRecord: 5.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "sales" [0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "sales" ("city", "created_at", "date", "good", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Mansoura"], ["created_at", Sun, 11 Jan 2015 19:13:34 UTC +00:00], ["date", Thu, 01 Jan 2015 04:00:00 UTC +00:00], ["good", "iphone"], ["price", 5000], ["updated_at", Sun, 11 Jan 2015 19:13:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SalesController#destroy as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mSale Load (0.1ms)[0m  [1mSELECT "sales".* FROM "sales" WHERE "sales"."id" = ? LIMIT 1[0m  [["id", "101"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "sales" WHERE "sales"."id" = ?[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/sales
+Completed 302 Found in 16.2ms (ActiveRecord: 1.0ms)
+  [1m[36m (10.4ms)[0m  [1mrollback transaction[0m

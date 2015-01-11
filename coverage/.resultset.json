@@ -1,20 +1,20 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/saasbook/final/app/controllers/application_controller.rb": [
+      "/home/saasbook/Final_Programming/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/saasbook/final/app/helpers/application_helper.rb": [
+      "/home/saasbook/Final_Programming/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/final/app/helpers/sales_helper.rb": [
+      "/home/saasbook/Final_Programming/app/helpers/sales_helper.rb": [
         1,
         null
       ],
-      "/home/saasbook/final/app/controllers/sales_controller.rb": [
+      "/home/saasbook/Final_Programming/app/controllers/sales_controller.rb": [
         1,
         null,
         null,
@@ -102,7 +102,7 @@
         null,
         null
       ],
-      "/home/saasbook/final/app/models/sale.rb": [
+      "/home/saasbook/Final_Programming/app/models/sale.rb": [
         1,
         1,
         null,
@@ -112,6 +112,6 @@
         null
       ]
     },
-    "timestamp": 1421002972
+    "timestamp": 1421003616
   }
 }
